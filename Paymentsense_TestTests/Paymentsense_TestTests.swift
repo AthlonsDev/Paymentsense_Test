@@ -11,24 +11,48 @@ import XCTest
 
 class Paymentsense_TestTests: XCTestCase {
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+      let HomeController = FirstTableView()
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+      var sut: URLSession!
+    
+      override func setUp() {
+          // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        sut = URLSession(configuration: .default)
+      }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+      override func tearDown() {
+          // Put teardown code here. This method is called after the invocation of each test method in the class.
+        sut = nil
+        super.tearDown()
+      }
+    
+    
+      func testNetwork() {
+            
+            let url = URL(string: "https://www.breakingbadapi.com/api/")
+    //        Expectation to meet
+            let premise = expectation(description: "Completion handler invoked")
+            var statusCode: Int?
+            var responseError: Error?
+            
+    //        When
+            if let url = url {
+            let dataTask = sut.dataTask(with: url) { (data, response, error) in
+                
+                statusCode = (response as? HTTPURLResponse)?.statusCode
+                responseError = error
+                premise.fulfill()
+                
+            }
+            dataTask.resume()
+            wait(for: [premise], timeout: 5)
+            
+    //        then
+            XCTAssertNil(responseError)
+            XCTAssertEqual(statusCode, 200)
+            
+            }
         }
-    }
 
 }
