@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F29DB889-9976-4BC1-AACF-3F4324569947"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "75A6B60F-26A6-4FBA-B535-5168381482A3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/Services/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "getData(category:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB7E2597-ABD7-4224-91A3-391655BF47F0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/Services/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "getData(category:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB7E2597-ABD7-4224-91A3-391655BF47F0 - bdea8aa689ab49eb"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Paymentsense_Test.Service.getData(category: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;Paymentsense_Test.Characters&gt;&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Paymentsense_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/athlosn90/Desktop/Paymentsense_Test/Paymentsense_Test/Services/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "2048">
+               </Location>
+               <Location
+                  uuid = "BB7E2597-ABD7-4224-91A3-391655BF47F0 - 90e185ccf96fd5f1"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Paymentsense_Test.Service.getData(category: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;Paymentsense_Test.Characters&gt;&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Paymentsense_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/athlosn90/Desktop/Paymentsense_Test/Paymentsense_Test/Services/Service.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "291">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3347EA18-C61A-4348-BD7D-68B9F51BADCC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/ViewModels/FirstViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "FirstViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06DE0AF6-9071-448C-A868-CE6B11DA9796"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/Controllers/SecondTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30AD7283-EC57-4482-944F-26554BEF5F64"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/Controllers/SecondTableView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "563ABBF3-A081-4808-A945-2A6C3D35F836"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/Services/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getData(category:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57FEB1CB-A93D-4082-86FD-4396317B03AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/Services/Service.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "getData(category:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FEA9AFF-47F6-4A9C-B711-9B94EF198987"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/ViewModels/SecondViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "processImages(imageString:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41D683EC-4CD5-4CD1-8861-FC06F6166801"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/ViewModels/DetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "getData(category:query:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2EB3E6D-511C-46AB-96E8-C34B475B61AB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/ViewModels/DetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getData(category:query:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2EB3E6D-511C-46AB-96E8-C34B475B61AB - a4f1062b187a4f86"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Paymentsense_Test.DetailViewModel.getData(category: Swift.String, query: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;Paymentsense_Test.Characters&gt;&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Paymentsense_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/athlosn90/Desktop/Paymentsense_Test/Paymentsense_Test/ViewModels/DetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "111">
+               </Location>
+               <Location
+                  uuid = "A2EB3E6D-511C-46AB-96E8-C34B475B61AB - 4c9b806ae40097ef"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Paymentsense_Test.Characters&gt;&gt;, Swift.Bool) -&gt; () in Paymentsense_Test.DetailViewModel.getData(category: Swift.String, query: Swift.String, completion: (Swift.Optional&lt;Swift.Array&lt;Paymentsense_Test.Characters&gt;&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
+                  moduleName = "Paymentsense_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/athlosn90/Desktop/Paymentsense_Test/Paymentsense_Test/ViewModels/DetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "300">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A13C8AA-1AB5-40F1-BC89-7EE958724B35"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/ViewModels/DetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "getData(category:query:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CE90650E-B75B-41D1-8504-4D95F5A59382"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Paymentsense_Test/Controllers/DetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "updateUI()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CE90650E-B75B-41D1-8504-4D95F5A59382 - 2deacac04ee37a07"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Paymentsense_Test.DetailViewController.updateUI() -&gt; ()"
+                  moduleName = "Paymentsense_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/athlosn90/Desktop/Paymentsense_Test/Paymentsense_Test/Controllers/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1178">
+               </Location>
+               <Location
+                  uuid = "CE90650E-B75B-41D1-8504-4D95F5A59382 - 210f3bef8f411eb8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;Paymentsense_Test.Characters&gt;&gt;, Swift.Bool) -&gt; () in Paymentsense_Test.DetailViewController.updateUI() -&gt; ()"
+                  moduleName = "Paymentsense_Test"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/athlosn90/Desktop/Paymentsense_Test/Paymentsense_Test/Controllers/DetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "122">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
