@@ -55,4 +55,35 @@ class Paymentsense_TestTests: XCTestCase {
             }
         }
 
+    
+    func testResponse() throws {
+        guard let url = URL(string: "https://www.breakingbadapi.com/api/") else {return}
+
+        let request = NSMutableURLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
+            request.httpMethod = "GET"
+        
+
+        let session = URLSession.shared
+                
+        let datatask = session.dataTask(with: request as URLRequest) { (data, response, error) in
+            guard let data = data else {return}
+            do { let items = try JSONDecoder().decode([Items].self, from: data)
+                
+                XCTAssertEqual(items.count, 20)
+
+                let repo = items.first
+
+                XCTAssertEqual(repo?.char_id, 3081286)
+                XCTAssertEqual(repo?.nickname, "Heisenberg")
+                XCTAssertEqual(repo?.name, "Walter White")
+            }
+            catch let error as NSError { print(error) }
+        }
+//        let owner = response.first.
+//
+//        XCTAssertEqual(owner.login, "dtrupenn")
+//        XCTAssertEqual(owner.id, 872147)
+//        XCTAssertEqual(owner.gravatarId, "")
+    }
+
 }

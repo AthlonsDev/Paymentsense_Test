@@ -9,37 +9,64 @@
 import Foundation
 import UIKit
 
-class SecondTableView: UITableViewController {
+class SecondTableView: UITableViewController, UISearchBarDelegate {
     
     
     
     let cellID = "cellID"
-    var charViewModel = [CharacterViewModel]()
+    var charViewModel = [ItemsViewModel]()
     var category = String()
+    var id = Int()
     
     override func viewDidLoad() {
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        tableView.register(BaseCell.self, forCellReuseIdentifier: cellID)
+        tableView.rowHeight = 80
+        
 
         getData()
     }
+    
+//    TODO: Add a UISearchBar to filter out results (like quotes by name)
+    
     
     func getData() {
         
         navigationItem.title = category
         
-        let service = Service()
-         
-         service.getData(category: category) { (data, success) in
-            if success == true {
-
-                    self.charViewModel = data?.map({return CharacterViewModel(data: $0)}) ?? []
-                    self.tableView.reloadData()
-             }
-             
-         }
+       let vm = ItemsViewModel(data: Items())
+        
+        vm.getData(category: category) { (data, success) in
+            if success {
+                  self.charViewModel = data?.map({return ItemsViewModel(data: $0)}) ?? []
+                  self.tableView.reloadData()
+            }
+        }
         
     }
+
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        
+        queryData(query: searchBar.text!)
+        
+    }
+    
+    func queryData(query: String) {
+          
+          navigationItem.title = category
+          
+          let service = Service()
+           
+           service.getData(category: "\(category)?author=\(query)") { (data, success) in
+              if success == true {
+
+                      self.charViewModel = data?.map({return ItemsViewModel(data: $0)}) ?? []
+                      self.tableView.reloadData()
+               }
+               
+           }
+          
+      }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -48,23 +75,62 @@ class SecondTableView: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+ 
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
-        
-        let dataModel = charViewModel[indexPath.row]
         
         switch category {
         case "Characters":
-            cell.textLabel?.text = dataModel.name
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! BaseCell
+
+            let dataModel = charViewModel[indexPath.row]
+            cell.dvmChar = dataModel
+            cell.id = dataModel.char_id
+            return cell
+            
         case "Episodes":
-            cell.textLabel?.text = String(describing: dataModel.episode_id)
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! BaseCell
+
+            let dataModel = charViewModel[indexPath.row]
+            cell.dvmEp = dataModel
+            cell.id = dataModel.episode_id
+            return cell
+            
         case "Quotes":
-            cell.textLabel?.text = String(describing: dataModel.episode_id)
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! BaseCell
+
+            let dataModel = charViewModel[indexPath.row]
+            cell.dvmQ = dataModel
+            cell.id = dataModel.quote_id!
+            return cell
+            
         default:
-            break
+//            This will never get Called
+            let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! BaseCell
+            return cell
+            
         }
-                
-        return cell
+ 
+    }
+    
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         
+        let selectedCell = tableView.cellForRow(at: indexPath) as! BaseCell
+        
+        id = selectedCell.id
+
+        performSegue(withIdentifier: "goToDetails", sender: self)
+ 
+     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let destination = segue.destination as! DetailViewController
+        
+            destination.category = category
+            destination.id = id
+        
         
     }
     

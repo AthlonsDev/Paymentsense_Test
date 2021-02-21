@@ -15,7 +15,6 @@ class FirstTableView: UITableViewController {
 
     var rawData = [String]()
     let cellID = "cellID"
-    let viewModel = FirstViewModel()
     var category = String()
     
     override func viewDidLoad() {
@@ -23,6 +22,8 @@ class FirstTableView: UITableViewController {
 
         rawData = ["Characters", "Episodes", "Quotes"]
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        
+
         
     }
 

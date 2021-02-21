@@ -12,7 +12,7 @@ import Foundation
 class Service {
 
     
-    func getData(category: String, completion: @escaping([Characters]?, Bool) -> ()) {
+    func getData(category: String, completion: @escaping([Items]?, Bool) -> ()) {
         
         
         let serverAddress = String(format: "https://www.breakingbadapi.com/api/\(category)")
@@ -29,17 +29,11 @@ class Service {
                 
                 let datatask = session.dataTask(with: request as URLRequest) { (data, response, error) in
                     
-                     guard let data = data else {
-                                   
-                        return
-                                   
-                        
-                        
-                    }
+                     guard let data = data else {return}
                                         
                     do {
                         
-                        let jsonData = try JSONDecoder().decode([Characters].self, from: data)
+                        let jsonData = try JSONDecoder().decode([Items].self, from: data)
                         
                         let items = jsonData
                         
@@ -61,6 +55,4 @@ class Service {
                 datatask.resume()
 
     }
-    
-    
 }
